@@ -1,7 +1,9 @@
 package com.mycompany.reflection.task3;
 
 import java.util.Date;
+import java.util.List;
 
+@SaveTo
 public class User {
 
     @Save
@@ -10,25 +12,31 @@ public class User {
     @Save
     private String firstName;
 
-    @Save
     private String lastName;
 
     @Save
     private Date birth;
 
-    @Save
     private String address;
+
+    @Save
+    private UserObject userObject;
+
+    @Save
+    private List<String> list;
 
 
     public User() {
     }
 
-    public User(int id, String firstName, String lastName, Date birth, String address) {
+    public User(int id, String firstName, String lastName, Date birth, String address, UserObject userObject, List<String> list) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birth = birth;
         this.address = address;
+        this.userObject = userObject;
+        this.list = list;
     }
 
     public int getId() {
@@ -69,5 +77,21 @@ public class User {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public UserObject getUserObject() {
+        return userObject;
+    }
+
+    public void setUserObject(UserObject userObject) {
+        this.userObject = userObject;
+    }
+
+    public List<String> getList() {
+        return list;
+    }
+
+    public void setList(List<String> list) {
+        this.list = list;
     }
 }

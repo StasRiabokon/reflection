@@ -1,1 +1,13 @@
-some text
+id=1;
+firstName=Stas;
+birth=Sat Jul 28 01:45:37 EEST 2018;
+userObject=
+{
+stringField=String field;
+objectItem=
+{
+stringItem=ItemStr;
+intItem=1;
+}
+}
+list=[first, second];
