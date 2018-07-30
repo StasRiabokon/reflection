@@ -1,4 +1,9 @@
-package com.mycompany.reflection.task3;
+package com.mycompany.reflection.task3.application;
+
+import com.mycompany.reflection.task3.models.ObjectItem;
+import com.mycompany.reflection.task3.models.User;
+import com.mycompany.reflection.task3.models.UserObject;
+import com.mycompany.reflection.task3.serializer.Serializer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,6 +23,10 @@ public class Main {
                 new Date(), "Kyiv", userObject, list);
 
         Serializer.serialize(user);
+
+//        User newUser = (User) Serializer.deserialize(User.class);
+//
+//        System.out.println(newUser);
 
     }
 

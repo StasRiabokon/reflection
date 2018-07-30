@@ -1,4 +1,6 @@
-package com.mycompany.reflection.task3;
+package com.mycompany.reflection.task3.models;
+
+import com.mycompany.reflection.task3.annotations.Save;
 
 import java.util.Date;
 
@@ -7,8 +9,10 @@ public class UserObject {
     @Save
     private String stringField;
 
+    @Save
     private int intField;
 
+    @Save
     private Date dateField;
 
     @Save

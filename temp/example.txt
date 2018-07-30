@@ -1,9 +1,13 @@
 id=1;
 firstName=Stas;
-birth=Sat Jul 28 01:45:37 EEST 2018;
+lastName=Ryabokon;
+birth=Mon Jul 30 16:35:53 EEST 2018;
+address=Kyiv;
 userObject=
 {
 stringField=String field;
+intField=12;
+dateField=Mon Jul 30 16:35:53 EEST 2018;
 objectItem=
 {
 stringItem=ItemStr;

@@ -1,4 +1,7 @@
-package com.mycompany.reflection.task3;
+package com.mycompany.reflection.task3.models;
+
+import com.mycompany.reflection.task3.annotations.Save;
+import com.mycompany.reflection.task3.annotations.SaveTo;
 
 import java.util.Date;
 import java.util.List;
@@ -12,17 +15,19 @@ public class User {
     @Save
     private String firstName;
 
+    @Save
     private String lastName;
 
     @Save
     private Date birth;
 
+    @Save
     private String address;
 
-    @Save
+        @Save
     private UserObject userObject;
 
-    @Save
+        @Save
     private List<String> list;
 
 
@@ -93,5 +98,19 @@ public class User {
 
     public void setList(List<String> list) {
         this.list = list;
+    }
+
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", birth=" + birth +
+                ", address='" + address + '\'' +
+                ", userObject=" + userObject +
+                ", list=" + list +
+                '}';
     }
 }

@@ -1,9 +1,12 @@
-package com.mycompany.reflection.task3;
+package com.mycompany.reflection.task3.models;
 
+
+import com.mycompany.reflection.task3.annotations.Save;
 
 public class ObjectItem {
     @Save
     private String stringItem;
+
     @Save
     private int intItem;
 

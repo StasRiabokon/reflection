@@ -1,4 +1,4 @@
-package com.mycompany.reflection.task3;
+package com.mycompany.reflection.task3.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
